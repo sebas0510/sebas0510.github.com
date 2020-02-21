@@ -138,7 +138,9 @@ th{
    }
    .content{
      padding: 1.8em;
+     overflow: hidden;
    }
+
 }
 
 @media (min-height:550px) {

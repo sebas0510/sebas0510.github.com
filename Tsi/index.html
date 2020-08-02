@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Todos Servicios Inmobiliarios</title>
+    <link  rel="icon"   href="images/logo.svg" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="flexboxgrid.min.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <head>
+  <body>
+
+    <!-- Header y barra de navegacion-->
+
+    <header>
+
+      <div class="wrapper">
+        <img id="logo" src="./images/logo.svg" alt="logo todo servicios inmobiliarios">
+        <span>Todo Servicios Inmobiliarios</span>
+
+        <nav>
+          <a href="#aboutUs">Sobre nosotros</a>
+          <a href="#services">Servicios</a>
+          <a href="#projects">Proyectos</a>
+          <a href="#contact">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Slider de imagenes -->
+
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+      <!-- Overlay -->
+      <div class="overlay"></div>
+
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#bs-carousel" data-slide-to="1"></li>
+        <li data-target="#bs-carousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item slides active">
+          <div class="slide-1"></div>
+          <div class="hero">
+            <hgroup>
+                <h1>Hacemos tus proyectos realidad</h1>
+                <h3>Comienza tu proyecto con nosotros</h3>
+            </hgroup>
+            <button class="btn btn-hero btn-lg" role="button">See all features</button>
+          </div>
+        </div>
+        <div class="item slides">
+          <div class="slide-2"></div>
+          <div class="hero">
+            <hgroup>
+                <h1>We are smart</h1>
+                <h3>Get start your next awesome project</h3>
+            </hgroup>
+            <button class="btn btn-hero btn-lg" role="button">See all features</button>
+          </div>
+        </div>
+        <div class="item slides">
+          <div class="slide-3"></div>
+          <div class="hero">
+            <hgroup>
+                <h1>We are amazing</h1>
+                <h3>Get start your next awesome project</h3>
+            </hgroup>
+            <button class="btn btn-hero btn-lg" role="button">See all features</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About us view -->
+
+    <div id="aboutUs">
+      <div class="text">
+        <h2>Convertimos tus proyectos en realidad</h2>
+        <p>Con mas de 12 años de experiencia en el mundo de los mantenimientos y servicios a inmuebles, en todos servicios inmobiliarios nos preocupamos
+        </p>
+      </div>
+    </div>
+
+    <!-- Services view  -->
+
+    <div id="services">
+
+      <div class="text-services">
+        <h2 class="black"><strong>Nuestros</strong> Servicios</h2>
+        <p>Desde remodelar una cocina, servicios plomeria, electricidad hasta remodelar todo tu hogar, nuestra experiencia respalda nuestro trabajo.</p>
+      </div>
+
+      <div class="row list">
+        <div class="services-list col-xs-12 col-sm-8 col-md-6 col-lg-4">
+
+          <img src="./images/house.png" alt="">
+          <h2>Mantenimientos de inmuebles</h2>
+          <p>Ofrecemos todo lo relacionado con el cuidado de su inmueble, arreglo de fugas, correciones...</p>
+
+        </div>
+      </div>
+
+    </div>
+
+
+ <script src="./scripts/navbar.js" type="text/javascript"></script>
+
+  </body>
+</html>

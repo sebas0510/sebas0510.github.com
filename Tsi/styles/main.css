@@ -1,0 +1,265 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-family: 'Baloo Thambi 2';
+}
+
+
+
+header{
+  width: 100%;
+  overflow: hidden;
+  background: white;
+  position: fixed;
+  z-index: 4;
+
+}
+
+.wrapper{
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header #logo{
+  height: 128px;
+  width: 150px;
+  padding: 10px;
+  padding-top: 30px;
+  float: left;
+}
+
+header span{
+  float: left;
+  font-size: 40px;
+  padding-top: 64px;
+  color: #080505;
+}
+
+header nav{
+  float: right;
+  line-height: 200px;
+}
+
+header nav a{
+  display: inline-block;
+  text-decoration: none;
+  color: #080505;
+  padding: 10px 20px;
+  line-height: normal;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+header nav a:hover {
+  background: #f81609;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+}
+
+.header2{
+  position: fixed;
+  height: 100px
+}
+
+.header2 #logo{
+  line-height: 120px;
+  height: 73px;
+  padding-top: 0px;
+}
+
+.header2 span{
+  line-height: 100px;
+  font-size: 30px;
+  padding-top: 0px;
+}
+
+.header2 nav{
+  line-height: 100px;
+}
+
+
+
+.fade-carousel {
+    position: relative;
+    height: 100vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 100vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #f81609;
+    border-color: #f81609;
+    opacity: .7;
+    z-index: 3;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 6em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s;
+        -ms-transition: 2s all ease-in-out .1s;
+         -o-transition: 2s all ease-in-out .1s;
+            transition: 2s all ease-in-out .1s;
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s;
+        -ms-transition: 2s all ease-in-out .1s;
+         -o-transition: 2s all ease-in-out .1s;
+            transition: 2s all ease-in-out .1s;
+}
+
+/********************************/
+/*            Overlay           */
+/********************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .7;
+}
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #f81609;
+    border-color: #f81609;
+    outline: none;
+    margin: 20px auto;
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1,
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+  background-image: url(https://ununsplash.imgix.net/photo-1416339134316-0e91dc9ded92?q=75&fm=jpg&s=883a422e10fc4149893984019f63c818);
+}
+.fade-carousel .slides .slide-2 {
+  background-image: url(https://ununsplash.imgix.net/photo-1416339684178-3a239570f315?q=75&fm=jpg&s=c39d9a3bf66d6566b9608a9f1f3765af);
+}
+.fade-carousel .slides .slide-3 {
+  background-image: url(https://ununsplash.imgix.net/photo-1416339276121-ba1dfa199912?q=75&fm=jpg&s=9bf9f2ef5be5cb5eee5255e7765cb327);
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; }
+}
+
+/* AboutUs Style  */
+
+#aboutUs{
+  width: 100%;
+  height: 50vh;
+  background-color: #f81609;
+  color: white;
+  padding: 1px;
+
+}
+
+.text{
+  padding-top: 5%;
+  text-align: center;
+  width: 100%;
+  height: 80%;
+}
+
+.text h2{
+  font-size: 5em;
+}
+
+.text p{
+  font-size: 2em;
+}
+
+/* Services style */
+
+.text-services{
+  padding: 3%;
+}
+
+.text-services h2{
+  font-size: 4em;
+}
+
+.text-services p{
+  font-size: 2.5em;
+}
+
+.black{
+  color: black;
+}
+
+.services-list{
+  text-align: center;
+  padding: 40px;
+}
+
+.services-list img{
+  height: 110px;
+  width: 130px;
+}
+
+.list{
+  padding: 40px;
+}

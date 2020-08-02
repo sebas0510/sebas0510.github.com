@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registro | Autos & Accesorios</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="flexboxgrid.min.css">
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./img/coche.png" alt="logo Autos & Accesorios">
+      <h1 class="title">Autos & Accesorios</h1>
+      <h2 class="title">Registro</h2>
+    </header>
+    <nav>
+      <ul>
+        <li><a class="underline" href="#" onclick="empleado()">Empleado</a></li>
+        <li><a class="underline" href="#" onclick="cliente()">Cliente</a></li>
+        <li><a class="underline" href="#" onclick="auto()">Auto</a></li>
+        <li><a class="underline" href="#" onclick="servicio()">Servicio</a></li>
+      </ul>
+    </nav>
+    <div id="demo">
+
+    </div>
+
+
+       <div id="empleado"  class="container" style="display: none;">
+         <div class="card">
+           <form class="empleado" action="" method="post">
+             <h3>Empleado</h3>
+             <input type="text" name="nombreEmpleado" value="" placeholder="Nombre" required>
+             <input type="text" name="cedulaEmpleado" value="" placeholder="Cedula" required>
+             <input type="text" name="telefonoEmpleado" value="" placeholder="Teléfono" required>
+             <button id="boton" name="registrar" type="submit" class="btn">Registrar</button>
+           </form>
+         </div>
+       </div>
+
+    <div id="cliente" class="container" style="display: none;">
+      <div class="card">
+        <form class="cliente" action="" method="post">
+          <h3>Cliente</h3>
+          <input type="text" name="nombreCliente" value="" placeholder="Nombre" required>
+          <input type="text" name="cedulaCliente" value="" placeholder="Cedula" required>
+          <input type="text" name="telefonoCliente" value="" placeholder="Teléfono" required>
+          <input type="email" name="correoCliente" value="" placeholder="E-mail" required>
+          <input type="text" name="direccionCliente" value="" placeholder="Dirección" required>
+          <button id="boton" name="registrar" type="submit" class="btn">Registrar</button>
+        </form>
+      </div>
+    </div>
+    <div id="auto" class="container" style="display: none;">
+      <div class="card">
+        <form class="auto" action="" method="post">
+          <h3>Auto</h3>
+          <input type="text" name="marcaAuto" value="" placeholder="Marca" required>
+          <input type="text" name="modeloAuto" value="" placeholder="Modelo" required>
+          <input type="text" name="placaAuto" value="" placeholder="Placa" required>
+          <select class="" name="tipoAuto" placeholder="Tipo de auto" required>
+            <option disabled selected>Tipo de auto</option>
+            <option value="sedan">Sedán</option>
+            <option value="camioneta">Camioneta</option>
+            <option value="van">Van</option>
+          </select>
+          <input type="number" name="capacidadAuto" value="" placeholder="Capacidad" required>
+          <input type="text" name="color" value="" placeholder="Color" required>
+          <input type="text" name="kilometrajeAuto" value="" placeholder="Kilometraje" required>
+          <select class="" name="combustible" required>
+            <option disabled selected>Tipo de combustible</option>
+            <option value="gasolina">Gasolina</option>
+            <option value="gas">Gas</option>
+            <option value="electrico">Eléctrico</option>
+          </select>
+          <button id="boton" name="registrar" type="submit" class="btn">Registrar</button>
+        </form>
+      </div>
+    </div>
+    <div id="servicio" class="container" style="display: none;">
+      <div class="card">
+        <form class="servicio" action="" method="post">
+          <h3>Servicio</h3>
+          <input type="text" name="tecnico" value="" placeholder="Técnico" required>
+          <input type="text" name="cliente" value="" placeholder="Cliente" required>
+          <input type="text" name="placa" value="" placeholder="Placa" required>
+          <input type="text" name="servicio" value="" placeholder="Servicio" required>
+          <input type="text" name="precio" value="" placeholder="Precio" required>
+          <select class="" name="garantía" required>
+            <option disabled selected>Garantía</option>
+            <option value="si">Sí</option>
+            <option value="no"> No</option>
+          </select>
+          <button id="boton" name="registrar" type="submit" class="btn">Registrar</button>
+        </form>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

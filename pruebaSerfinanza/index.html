@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script  src="./script/validacion.js"></script>
+    <script  src="./script/countryApi.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1 id="title">Registro</h1>
+
+        <form class="formulario" action="./bd/bd.php" method="post" onsubmit="validacion()">
+          <br>
+          <input id="nombre" type="text" name="nombre" placeholder="Nombre">
+          <br>
+          <input id="celular" type="number" name="celular" placeholder="celular">
+          <br>
+          <input id="email" type="email" name="email"  placeholder="Email">
+          <br>
+          <select id="pais" class="" name="pais" >
+            <option value="">País</option>
+            <option value="colombia">Colombia</option>
+            <option value="venezuela">Venezuela</option>
+            <option value="estados unidos">Estados Unidos</option>
+          </select>
+          <button type="submit" name="button">Registrar</button>
+        </form>
+
+      </div>
+    </div>
+
+  </body>
+</html>

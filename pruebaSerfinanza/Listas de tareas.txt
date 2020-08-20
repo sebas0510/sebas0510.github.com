@@ -1,0 +1,15 @@
+Listas de tareas a realizar:
+
+-Logrado
+
+1. Maquetación de la página de registro con html y css...................Duración: 45 minutos.
+2. Validación de campos de formulario con javascript.....................Duración: 15 minutos.
+3. Creación de base datos en Mysql con myphpadmin........................Duración: 15 minutos.
+4. Conexión y configuración de base de datos con php.....................Duración: 30 minutos.
+
+-No logrado 
+
+1.Consumir api http://country.io/names.json debido a problemas con CORS..Duración: 1 hora.
+
+						  Tiempo total dedicado: 2 horas y 45 minutos.
+
